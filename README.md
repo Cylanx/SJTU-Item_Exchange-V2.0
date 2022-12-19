@@ -1,10 +1,6 @@
 # SoftWareProject_SJTU-EXCHANGE
 # Copyright by Cylanx
 	1.You can run main.py to open a GUI to exchange item .The Item_data.txt ,where stores the information of all items ,is already created and holds for something i pre-write .
-	
-	2.You can also change the mode in main.py to run cprofile to see the evaluation , and the simple test program in test.py.
-	
-	3.Note that: Source file by Python 3.10, additonal packages including "tkinter" "profile" "pickle" "pstats", you might have to download with pip.
-	
-	4.UserGuide: In "Item name" column and "item information" column are respectively written into the name used for item retrieval and the details of the item. Click Additem button to add the item to the warehouse; After writing the name of "item name", click DeleteItem button to delete the corresponding information (if any), and click Searchitem button to find the corresponding item (if any); Click DisplayItem button to display the name of the existing item in the warehouse. There is help in the operation record column, with the "successful" notes.
-	(使用说明：“物品名称”“物品信息”分别写入用于物品检索的名称和物品的详细信息，点击添加后可添加物品进入仓库；在“物品名称”写入名字后点击删除物品可以删除对应信息（如果存在），点击查找可以查找对应物品（如果存在）；点击显示物品会显示仓库现有物品名称。在操作记录有提示信息，成功有successfully字样。)
+	2.Note that: Source file by Python 3.10, additonal packages including "tkinter" "sql" , you might have to download with pip.
+	3.UserGuide: Make sure that after downloading the SQL, after running the main.py, modify filename='D:SQLEMIS_log.ldf' on line 50 and 59 to the folder where you want to store data, the path must exist, otherwise an error will be reported; After the database is created, an error will be reported for the second build, please delete the data file and then re-establish it. The current version of the local database is not yet implemented to connect to the database remotely.
+	(确保下载sql后，运行main.py后在第50行，59行修改filename='D:\\SQL\\EMIS_log.ldf'为想要存放数据的文件夹，路径必须要存在，否则会报错；建立数据库后第二次建立也会报错，请删除数据文件后再重新建立。目前是本地数据库版本，还未实现远程连接数据库)
